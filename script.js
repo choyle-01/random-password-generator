@@ -8,8 +8,9 @@ function generatePassword() {
     )
   );
   // if the password is not between 8 and 128 characters it promps the user to enter a valid character amount 
-  if (count < 8 || count > 128) {
+  if (count < 8 || count > 128 || !count) {
     alert("Password must be between 8 and 128 characters.");
+    alert("Please type a number");
     return "";
   }
   // creates variables for all of the possible inputs into the password as well as a genPassword variable that will output the password 
